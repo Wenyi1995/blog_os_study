@@ -1,0 +1,16 @@
+[package]
+name = "blog_os"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+#[profile.dev]
+#panic = "abort"
+# 在json中定义"panic-strategy": "abort" 后 不再需要在这里进行定义
+#[profile.release]
+#panic = "abort"
+
+# 依赖的启动镜像
+[dependencies]
+bootloader = "0.9.8"
